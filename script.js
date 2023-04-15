@@ -42,3 +42,4 @@ document.querySelector("body").addEventListener("keydown", (event) => {
 //3rd step: => git push
 //
 //git pull => gets the all the code in the github.
+// git branch => see all the branches
