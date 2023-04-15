@@ -3,7 +3,7 @@
 const showModalBtn = document.querySelectorAll(".show-modal");
 const modalList = document.querySelectorAll(".modal");
 const overlay = document.querySelector(".overlay");
-const closeModal = document.querySelector(".close-modal");
+const closeModal = document.querySelectorAll(".close-modal");
 
 //add event listener to buttons
 const showModalHandler = (index) => {
@@ -20,7 +20,7 @@ showModalBtn.forEach((el, index) => {
   el.addEventListener("click", () => showModalHandler(index));
 });
 
-modalList.forEach((el, index) => {
+closeModal.forEach((el, index) => {
   el.addEventListener("click", (e) => {
     closeModalHandler(index);
   });
